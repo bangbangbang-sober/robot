@@ -154,6 +154,8 @@ void TIM6_IRQHandler(void)
 				Milemeter_R_Motor= (float)wtemp2;
 				
 			  odometry(Milemeter_R_Motor,Milemeter_L_Motor);//计算里程计
+			
+//				printf("wtemp2 = %d , wtemp1 = %d \r\n",wtemp2, wtemp1);
 				
 				main_sta|=0x02;//执行计算里程计数据步骤
 

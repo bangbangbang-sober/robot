@@ -53,8 +53,7 @@ extern int ROBOT_ENCODER_EN;
 void odometry(float right,float left)
 {	
 	if(once)  //常数仅计算一次
-	{	
-		
+	{		
 		const_frame = encoder_diameter*pi/(line_number*multiplier);
 		const_angle = const_frame /wheel_interval;																			//0.0003651913666667
 		once=0;
@@ -79,7 +78,7 @@ void odometry(float right,float left)
 		position_x = (-pos_x) * 1.19;	//内轮和外轮的周长比
 		position_y = pos_y * 1.19;
 			
-//		printf("position_x = %f , position_y = %f \r\n",(position_x ), (position_y));
+//		printf("yaw = %f ,position_x = %f , position_y = %f \r\n",oriention,(position_x ), (position_y));
 		
 		velocity_linear = delta_distance*const_frame / dt;	//计算出里程计线速度
 		velocity_angular = oriention_interval / dt;					//计算出里程计角速度
