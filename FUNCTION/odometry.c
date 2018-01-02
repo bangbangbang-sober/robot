@@ -96,11 +96,8 @@ void odometry(float right,float left)
 		pos_y = pos_y + delta_distance * const_frame * cos_ ;	//计算出里程计y坐标
 		pos_x = pos_x + delta_distance * const_frame * sin_ ;	//计算出里程计x坐标 
 		
-		position_x = -pos_x;
-		position_y = pos_y;
-		
-		position_x = position_x * 1.19;
-		position_y = position_y * 1.19;
+		position_x = (-pos_x) * 1.19;	//内轮和外轮的周长比
+		position_y = pos_y * 1.19;
 			
 //		printf("position_x = %f , position_y = %f \r\n",(position_x ), (position_y));
 		
