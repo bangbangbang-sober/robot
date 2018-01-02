@@ -1977,17 +1977,17 @@ Memory Map of the image
     0x08003c74   0x00000a88   Code   RO          944    .text               us_mcu_transfer.o
     0x080046fc   0x00000048   Code   RO          974    .text               usbio.o
     0x08004744   0x00000294   Code   RO         1005    .text               timer_interrupt.o
-    0x080049d8   0x000000dc   Code   RO         1034    .text               pid.o
-    0x08004ab4   0x00000284   Code   RO         1069    .text               odometry.o
-    0x08004d38   0x00000b50   Code   RO         1130    .text               usb_core.o
-    0x08005888   0x0000003c   Code   RO         1145    .text               usb_init.o
-    0x080058c4   0x0000033c   Code   RO         1168    .text               usb_int.o
-    0x08005c00   0x0000005c   Code   RO         1192    .text               usb_mem.o
-    0x08005c5c   0x00000808   Code   RO         1204    .text               usb_regs.o
-    0x08006464   0x00000080   Code   RO         1216    .text               usb_sil.o
-    0x080064e4   0x0000000c   Code   RO         1241    .text               usb_endp.o
-    0x080064f0   0x000000f8   Code   RO         1260    .text               usb_istr.o
-    0x080065e8   0x0000023c   Code   RO         1281    .text               usb_prop.o
+    0x080049d8   0x000000dc   Code   RO         1061    .text               pid.o
+    0x08004ab4   0x00000284   Code   RO         1096    .text               odometry.o
+    0x08004d38   0x00000b50   Code   RO         1127    .text               usb_core.o
+    0x08005888   0x0000003c   Code   RO         1142    .text               usb_init.o
+    0x080058c4   0x0000033c   Code   RO         1165    .text               usb_int.o
+    0x08005c00   0x0000005c   Code   RO         1189    .text               usb_mem.o
+    0x08005c5c   0x00000808   Code   RO         1201    .text               usb_regs.o
+    0x08006464   0x00000080   Code   RO         1213    .text               usb_sil.o
+    0x080064e4   0x0000000c   Code   RO         1238    .text               usb_endp.o
+    0x080064f0   0x000000f8   Code   RO         1257    .text               usb_istr.o
+    0x080065e8   0x0000023c   Code   RO         1278    .text               usb_prop.o
     0x08006824   0x00000148   Code   RO         1304    .text               usb_pwr.o
     0x0800696c   0x00001250   Code   RO         1322    .text               inemo_ahrs.o
     0x08007bbc   0x00000018   Code   RO         1347    .text               inemo_ahrs_memman_1.o
@@ -2052,7 +2052,7 @@ Memory Map of the image
     0x08009ed4   0x0000004c   Code   RO         1424    i.sqrt              m_ws.l(sqrt.o)
     0x08009f20   0x00000005   Data   RO            3    .constdata          main.o
     0x08009f25   0x0000007a   Data   RO          946    .constdata          us_mcu_transfer.o
-    0x08009f9f   0x0000008c   Data   RO         1228    .constdata          usb_desc.o
+    0x08009f9f   0x0000008c   Data   RO         1225    .constdata          usb_desc.o
     0x0800a02b   0x00000005   PAD
     0x0800a030   0x00000050   Data   RO         1391    .constdata          m_ws.l(asin.o)
     0x0800a080   0x00000098   Data   RO         1767    .constdata          m_ws.l(atan.o)
@@ -2081,16 +2081,16 @@ Memory Map of the image
     0x20000138   0x00000044   Data   RW          947    .data               us_mcu_transfer.o
     0x2000017c   0x00000004   PAD
     0x20000180   0x00000020   Data   RW         1006    .data               timer_interrupt.o
-    0x200001a0   0x0000000c   Data   RW         1035    .data               pid.o
-    0x200001ac   0x00000080   Data   RW         1070    .data               odometry.o
-    0x2000022c   0x00000003   Data   RW         1131    .data               usb_core.o
+    0x200001a0   0x0000000c   Data   RW         1062    .data               pid.o
+    0x200001ac   0x00000080   Data   RW         1097    .data               odometry.o
+    0x2000022c   0x00000003   Data   RW         1128    .data               usb_core.o
     0x2000022f   0x00000001   PAD
-    0x20000230   0x00000014   Data   RW         1147    .data               usb_init.o
-    0x20000244   0x00000004   Data   RW         1169    .data               usb_int.o
-    0x20000248   0x0000001a   Data   RW         1229    .data               usb_desc.o
+    0x20000230   0x00000014   Data   RW         1144    .data               usb_init.o
+    0x20000244   0x00000004   Data   RW         1166    .data               usb_int.o
+    0x20000248   0x0000001a   Data   RW         1226    .data               usb_desc.o
     0x20000262   0x00000002   PAD
-    0x20000264   0x0000003c   Data   RW         1261    .data               usb_istr.o
-    0x200002a0   0x0000009c   Data   RW         1282    .data               usb_prop.o
+    0x20000264   0x0000003c   Data   RW         1258    .data               usb_istr.o
+    0x200002a0   0x0000009c   Data   RW         1279    .data               usb_prop.o
     0x2000033c   0x00000007   Data   RW         1305    .data               usb_pwr.o
     0x20000343   0x00000001   PAD
     0x20000344   0x00000034   Data   RW         1324    .data               inemo_ahrs.o
@@ -2104,8 +2104,8 @@ Memory Map of the image
     0x20000504   0x000002c8   Zero   RW          604    .bss                usart.o
     0x200007cc   0x00000058   Zero   RW          925    .bss                us_can_zyt.o
     0x20000824   0x000033a8   Zero   RW          945    .bss                us_mcu_transfer.o
-    0x20003bcc   0x0000001c   Zero   RW         1146    .bss                usb_init.o
-    0x20003be8   0x00000080   Zero   RW         1242    .bss                usb_endp.o
+    0x20003bcc   0x0000001c   Zero   RW         1143    .bss                usb_init.o
+    0x20003be8   0x00000080   Zero   RW         1239    .bss                usb_endp.o
     0x20003c68   0x0000001c   Zero   RW         1323    .bss                inemo_ahrs.o
     0x20003c84   0x00000004   PAD
     0x20003c88   0x00000200   Zero   RW          640    HEAP                startup_stm32f10x_hd.o
@@ -2131,7 +2131,7 @@ Image component sizes
         84          8          5         40         93     226816   main.o
        220         22          0          0          0       1733   misc.o
        652         14          0          0          0       1828   myiic.o
-       644        112          0        128          0     205068   odometry.o
+       644        112          0        128          0       1980   odometry.o
        220         22          0         12          0       1215   pid.o
         36          8        304          0       1536        760   startup_stm32f10x_hd.o
        396          6          0          0          0       3582   stm32f10x_dac.o
@@ -2144,7 +2144,7 @@ Image component sizes
          0          0          0          0          0         32   sys.o
        480         38          0         20          0       1635   system_stm32f10x.o
       1112         28          0          0          0       2775   timer_function.o
-       660         96          0         32          0       2105   timer_interrupt.o
+       660         96          0         32          0     205225   timer_interrupt.o
        252         24          0         16         88       1971   us_can_zyt.o
       2696        160        122         68      13224      11314   us_mcu_transfer.o
        320         18          0          6        712       3175   usart.o
@@ -2162,7 +2162,7 @@ Image component sizes
         72          4          0          0          0       1212   usbio.o
 
     ----------------------------------------------------------------------
-     33748       1544        608        888      16132    1076067   Object Totals
+     33748       1544        608        888      16132    1076099   Object Totals
          0          0         32          0          0          0   (incl. Generated)
          2          0          5         17          7          0   (incl. Padding)
 
@@ -2251,8 +2251,8 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
 
-     40432       1884       1136        900      16132    1075239   Grand Totals
-     40432       1884       1136        244      16132    1075239   ELF Image Totals (compressed)
+     40432       1884       1136        900      16132    1075271   Grand Totals
+     40432       1884       1136        244      16132    1075271   ELF Image Totals (compressed)
      40432       1884       1136        244          0          0   ROM Totals
 
 ==============================================================================
